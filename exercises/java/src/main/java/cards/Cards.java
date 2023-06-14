@@ -11,11 +11,11 @@ public class Cards {
 
     public String[] getCards() {
         String[] result = new String[52];
-        int[][] deck = new int[52][2];
+        PlayingCard[] deck = new PlayingCard[52];
 
         for (int suit = 0; suit < 4; suit++) {
             for (int faceValue = 0; faceValue < 13; faceValue++) {
-                deck[suit*13+faceValue] = new int[]{suit, faceValue};
+                deck[suit*13+faceValue] = new PlayingCard(suit, faceValue);
             }
         }
 
