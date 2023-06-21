@@ -9,4 +9,12 @@ public class PlayingCard {
         this.suit = suit;
         this.faceValue = faceValue;
     }
+
+    public int getSuit() {
+        return suit;
+    }
+
+    public int getFaceValue() {
+        return faceValue;
+    }
 }
