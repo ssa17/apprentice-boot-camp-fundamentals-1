@@ -2,19 +2,19 @@ package cards;
 
 public class PlayingCard {
 
-    private final Suit suit;
-    private int faceValue;
+    private final int cardValue;
+    private final String cardSuit;
 
-    public PlayingCard(Suit inSuit, int faceValue) {
-        suit = new Suit(inSuit);
-        this.faceValue = faceValue;
+    public PlayingCard(int cardValue, String cardSuit) {
+        this.cardValue = cardValue;
+        this.cardSuit = cardSuit;
     }
 
-    public Suit getSuit() {
-        return suit;
+    public int getCardValue() {
+        return cardValue;
     }
 
-    public int getFaceValue() {
-        return faceValue;
+    public String getCardSuit() {
+        return cardSuit;
     }
 }
